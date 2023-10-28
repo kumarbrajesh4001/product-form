@@ -15,7 +15,7 @@ const ProductForm = (props) => {
 
   const { productList } = useSelector((cv) => cv.product);
 
-  // console.log(productList, "productList");
+ 
 
   const category = [
     "Please Choose...",
@@ -26,23 +26,7 @@ const ProductForm = (props) => {
 
   const currentDate = new Date().toJSON().slice(0, 10);
 
-  //   const [productData, setProductData] = useState({
-  //     product_name: "",
-  //     category_name: "",
-  //     description: "",
-  //     exp_date: "",
-  //     cost_price: "",
-  //     sell_price: "",
-  //     discount: "",
-  //     dis_sell_price: 0,
-  //   });
-
-  //   const [editId, setEditId] = useState();
-
-  //   const editable = (param, ind) => () => {
-  //     setProductData(param);
-  //     setEditId(ind);
-  //   };
+  
 
   const getSellPriceWithDis = (saleRate, disc) =>
     saleRate - (saleRate * disc) / 100;
